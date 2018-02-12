@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tpw-D1-lPg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="dDO-9J-lQg">
+            <objects>
+                <navigationController id="5a4-VZ-cGc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kDa-SN-xuX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AJN-SA-foT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rqt-Yb-2qI" kind="relationship" relationship="rootViewController" id="p8M-p1-eKj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TX4-yr-eEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="528"/>
+        </scene>
+        <!--Коллекция-->
+        <scene sceneID="ogO-zv-75e">
+            <objects>
+                <viewController id="rqt-Yb-2qI" customClass="CollectionViewController" customModule="Flicccckr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nxT-Tf-USt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-WQ-dpo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aBf-AH-bmN">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dNf-WQ-dpo" firstAttribute="leading" secondItem="W6t-YH-MWE" secondAttribute="leading" id="U56-Wv-MFh"/>
+                            <constraint firstItem="W6t-YH-MWE" firstAttribute="trailing" secondItem="dNf-WQ-dpo" secondAttribute="trailing" id="mTs-4Q-n62"/>
+                            <constraint firstItem="W6t-YH-MWE" firstAttribute="bottom" secondItem="dNf-WQ-dpo" secondAttribute="bottom" id="nhc-gF-fVu"/>
+                            <constraint firstItem="dNf-WQ-dpo" firstAttribute="top" secondItem="W6t-YH-MWE" secondAttribute="top" id="s8F-Ut-q0P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W6t-YH-MWE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Коллекция" image="keypad" id="T56-rF-RIS"/>
+                    <navigationItem key="navigationItem" id="sG4-6W-srK"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dNf-WQ-dpo" id="sDD-8Z-BJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuj-AA-LEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="529"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XhB-Uu-znO">
+            <objects>
+                <tabBarController id="tpw-D1-lPg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pwz-e8-7Bf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="20c-RU-uSx" kind="relationship" relationship="viewControllers" id="snG-fQ-Xyg"/>
+                        <segue destination="5a4-VZ-cGc" kind="relationship" relationship="viewControllers" id="Vqb-kD-Q4Q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdE-kY-4yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-746" y="123"/>
+        </scene>
+        <!--Таблица-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flicccckr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ed5-Fh-6XI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ed5-Fh-6XI" secondAttribute="trailing" id="1nt-4G-PBb"/>
+                            <constraint firstItem="ed5-Fh-6XI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="97b-hH-Scb"/>
+                            <constraint firstAttribute="bottom" secondItem="ed5-Fh-6XI" secondAttribute="bottom" id="Jls-hm-z58"/>
+                            <constraint firstItem="ed5-Fh-6XI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dRd-Te-Pd0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Таблица" image="database" id="9EE-RM-SlS"/>
+                    <navigationItem key="navigationItem" id="dRr-9q-rjw"/>
+                    <connections>
+                        <outlet property="tableView" destination="ed5-Fh-6XI" id="X6H-ST-Hbb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="-190"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ts8-OP-0Ig">
+            <objects>
+                <navigationController id="20c-RU-uSx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CIw-u5-cWA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2u9-ZI-zFc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gJf-hW-kur"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFu-iH-kNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="-190"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="database" width="30" height="30"/>
+        <image name="keypad" width="30" height="30"/>
+    </resources>
+</document>

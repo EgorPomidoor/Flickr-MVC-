@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="257" id="XaC-Co-bbk" customClass="CustomCell" customModule="Flicccckr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XaC-Co-bbk" id="69X-HE-GqM">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="256.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LLS-cq-5ZT">
+                        <rect key="frame" x="0.0" y="11" width="486" height="235"/>
+                    </imageView>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiz-GT-rPf">
+                        <rect key="frame" x="0.0" y="11" width="486" height="235"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-tb-irw">
+                        <rect key="frame" x="224" y="200.5" width="39.5" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" red="0.96046975087439379" green="1" blue="0.92913631046906775" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fiz-GT-rPf" firstAttribute="width" secondItem="LLS-cq-5ZT" secondAttribute="width" id="C0n-5K-KzG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gv8-tb-irw" secondAttribute="bottom" constant="20" id="Hl2-Gb-sEn"/>
+                    <constraint firstAttribute="trailing" secondItem="LLS-cq-5ZT" secondAttribute="trailing" id="N5u-bx-iHA"/>
+                    <constraint firstItem="LLS-cq-5ZT" firstAttribute="centerX" secondItem="69X-HE-GqM" secondAttribute="centerX" id="NTX-iZ-9XO"/>
+                    <constraint firstItem="fiz-GT-rPf" firstAttribute="centerY" secondItem="LLS-cq-5ZT" secondAttribute="centerY" id="SXb-Cf-peE"/>
+                    <constraint firstItem="fiz-GT-rPf" firstAttribute="height" secondItem="LLS-cq-5ZT" secondAttribute="height" id="ZcO-QO-yMb"/>
+                    <constraint firstItem="gv8-tb-irw" firstAttribute="centerX" secondItem="fiz-GT-rPf" secondAttribute="centerX" id="bu3-og-mxf"/>
+                    <constraint firstItem="LLS-cq-5ZT" firstAttribute="leading" secondItem="69X-HE-GqM" secondAttribute="leading" id="jC0-b6-1cT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LLS-cq-5ZT" secondAttribute="bottom" id="lnL-n6-9jJ"/>
+                    <constraint firstItem="fiz-GT-rPf" firstAttribute="centerX" secondItem="LLS-cq-5ZT" secondAttribute="centerX" id="uMT-Oe-K2G"/>
+                    <constraint firstItem="LLS-cq-5ZT" firstAttribute="centerY" secondItem="69X-HE-GqM" secondAttribute="centerY" id="uvj-Ro-xzn"/>
+                    <constraint firstItem="LLS-cq-5ZT" firstAttribute="top" secondItem="69X-HE-GqM" secondAttribute="topMargin" id="xg7-8W-zPp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="photoImageView" destination="LLS-cq-5ZT" id="mqU-x5-4P4"/>
+                <outlet property="titleLabel" destination="gv8-tb-irw" id="7xQ-Uf-1Xm"/>
+            </connections>
+            <point key="canvasLocation" x="-1049" y="-22"/>
+        </tableViewCell>
+    </objects>
+</document>
